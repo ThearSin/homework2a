@@ -1,12 +1,12 @@
 var inputName = document.getElementById('input-name');
-var inputMail = document.getElementById('imput-mail');
+var inputMail = document.getElementById('input-mail');
 var inputMessage = document.getElementById('input-message');
 var button = document.querySelector('.submit-button');
-var regEx =/\S+@\S+\.\S+/;
+var regEx = /\S+@\S+\.\S+/;
 var form = document.querySelector('.form')
 
 function checkInput() {
-    if (inputName.value.trim() !=="" && regEx.text(inputMessage.value.trim() ! =="") {
+    if (inputName.value.trim() !== "" && regEx.test(inputMail.value) && inputMessage.value.trim() !== "") {
         button.style.backgroundColor = '#fa923f';
         button.disabled = false;
     } else {
